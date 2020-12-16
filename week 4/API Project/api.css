@@ -1,0 +1,265 @@
+
+:root{ /*My Key CSS Properties*/
+    --ff-primary: 'Special Elite', cursive;
+    --ff-secondary:'Source Code Pro', monospace ;
+  
+    --fw-reg: 300;
+    --fw-bold: 900;
+  
+  --clr-light: #FFFFFF;
+  --clr-dark: #2d2d86;
+  --clr-accent:#8E9AAF;
+  
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0, 0.15);
+
+  --bg-clr: #404040;
+  
+  }
+
+
+body{
+    background-color: var(--bg-clr);
+}
+
+
+/*First page*/
+.top-section{
+    background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/news/2020/03_2020/covid19/1800x1200_covid19_14.jpg");
+    background-repeat: no-repeat;
+    margin: auto;
+    opacity: .5;
+    height: 100vh;
+    
+}
+
+#title-1 {
+    color: var(--clr-light);
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.title:hover {
+    font-weight: bold;
+}
+
+/* DEMO-SPECIFIC STYLES */
+#typewriter1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(75, 220, 181); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 300px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(75, 220, 181) }
+  }
+
+/*#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }*/
+
+.btn {
+    color: var(--clr-light);
+    border:rgb(75, 220, 181);
+    background: none;  
+}
+
+.btn:hover{
+    color: rgb(75, 220, 181);;
+    opacity: 1;
+    background: var(--clr-light);  
+}
+ 
+ #navbar{
+  color: black;
+ }
+/*/top-section*/
+
+
+/*Second Page*/
+.middle-section{
+  
+background: url("https://www.nasa.gov/sites/default/files/images/324350main_11_full.jpg") no-repeat center center fixed; 
+
+/*("https://i.ytimg.com/vi/XBPjVzSoepo/maxresdefault.jpg") */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+z-index: -1;
+opacity: 1;
+margin: 56px;
+padding: 20px;
+
+}
+
+.title {
+  z-index: 10;
+}
+.middle-section > h1{
+color: white;
+text-align: center;
+}
+
+#title-2 {
+margin: 30px;
+text-align: center;
+}
+
+
+#title-2 > h1 {
+    color: red;
+    font-size: 80px;
+}
+
+#title-2 > h2 {
+    color: red;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(75, 220, 181); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 700px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(75, 220, 181) }
+  }
+
+.flex-grid-thirds {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75%;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+
+.stat-number{
+  height: 50px;
+  padding: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white; text-shadow: red 0.1em 0.1em 0.2em
+}
+
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  padding: 25px;
+  color: white;
+}
+
+#drop-down {
+    color: var(--clr-dark);
+}
+
+
+
+#drop-down{
+  text-align: center;
+  background-color: rgb(75, 220, 181);
+}
+
+#drop-down:hover {
+ color: white;
+}
+
+
+/*Footer*/
+.copyright > p{
+  text-align: center;
+}
+/*/Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#login-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 10px 30px 30px 30px;
+    border-radius: 5px;
+  }*/

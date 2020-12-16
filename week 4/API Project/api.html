@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The 2020 Virus</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="api.css">
+    
+  </head>
+
+  <body>
+    <section class="top-section" id="top-section">
+      <div class="title" id="title-1">
+        <h1 id="typewriter1" style="white-space: pre-line">Covid-19
+        </h1>
+        <p>The 2020 Virus</p>
+        <a href="#middle-section" class="btn">Get the latest numbers.</a>
+      </div>
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" id ="navbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#top-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#middle-section">The Numbers</a>
+              </li>
+              <li class="nav-item">
+              
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Countries
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop-down">
+                  <option value="" >Countries</option>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+    </section>
+
+
+
+
+    <section class="middle-section" id="middle-section">
+      <div class="title" id="title-2">
+        <h1 class ="typewriter2" id="total-global-cases">Total Cases: XXXXXXXX </h2>
+        <br>
+        <h2 class ="typewriter2" id="total-global-deaths">Total Deaths: XXXXXX</h4>
+      </div>
+      <!--GridBox-->
+      <div class="flex-grid-thirds" id="stats-box">
+          <div class="col">Total Confirmed Cases Globally
+            <div class="stat-number" id="stat-1">
+              xxxxxx
+            </div>
+          </div>
+          <div class="col">Total Deaths Globally
+            <div class="stat-number" id="stat-2">
+              xxxxxx
+            </div>
+          </div>          
+          <div class="col">Total Recovered Globally
+            <div class="stat-number" id="stat-3">
+              xxxxxx
+            </div>
+          </div>
+        </div>
+        <div class="flex-grid-thirds" id="stats-box">
+          <div class="col">New Confirmed Cases Globally
+            <div class="stat-number" id="new-global-confirmed">
+              xxxxxx
+            </div>
+          </div>
+          <div class="col">New Deaths Globally
+            <div class="stat-number" id="new-global-deaths">
+              xxxxxx
+            </div>
+          </div>
+          <div class="col">New Recovered Globally
+            <div class="stat-number" id="new-global-recovered">
+              xxxxxx
+            </div>
+          </div>
+          </div>
+      </div><!--/GridBox-->
+    
+
+<br>
+<br>
+<br>
+    
+      <h1>Examine a specific country: United States</h1>
+
+      <!--Option Menu-->
+
+      <!--<select class="mdb-select md-form" id="drop-down">
+        <option value="" disabled selected>Choose your country</option>
+      
+      
+      </select>-->
+      
+
+      <!--GridBox-->
+      <div class="flex-grid-thirds" id="stats-box">
+        <div class="col">Total Confirmed Cases
+          <div class="stat-number" id="total-cases">
+            xxxxxx
+          </div>
+        </div>
+        <div class="col">Total Deaths
+          <div class="stat-number" id="total-deaths">
+            xxxxxx
+          </div>
+        </div>          
+        <div class="col">Total Recovered
+          <div class="stat-number" id="total-recovered">
+            xxxxxx
+          </div>
+        </div>
+      </div>
+      <div class="flex-grid-thirds" id="stats-box">
+        <div class="col">New Confirmed Cases
+          <div class="stat-number" id="new-confirmed">
+            xxxxxx
+          </div>
+        </div>
+        <div class="col">New Deaths
+          <div class="stat-number" id="new-deaths">
+            xxxxxx
+          </div>
+        </div>
+        <div class="col">New Recovered
+          <div class="stat-number" id="new-recovered">
+            xxxxxx
+          </div>
+        </div>
+        </div>
+    </div><!--/GridBox-->
+
+    </section>
+
+
+<!--<div class= "covid-img" id= "covid-img">
+  <img src=" https://d2ebzu6go672f3.cloudfront.net/media/content/images/GettyImages-1200706447-crop.jpg">
+</div>
+
+-->
+
+    <footer>
+      <div class="copyright" id="copyright">
+        <p>Emily Scudero 2020</p>
+      </div>
+    </footer>
+      
+    <script src="api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
+
